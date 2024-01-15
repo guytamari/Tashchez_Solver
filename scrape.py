@@ -52,10 +52,10 @@ def answers(soup):
             if match:
                 if int(match.group(0)) == num_of_letters:
                     print(sentence[::-1])
-            elif match is None:
+            if match is None:
                 print('שתי מילים או יותר'[::-1])
             else:
-                return []
+                pass
     else:
         return "Element not found."
 
