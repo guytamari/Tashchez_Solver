@@ -15,7 +15,7 @@ headers = {
 url = 'https://www.note.co.il/solution/'
 second_url = 'https://www.note.co.il/solutions/'
 number_pattern = re.compile(r'\d+(\.\d+)?')
-word = re.compile("םילימ")
+word = re.compile("מילים")
 
 
 # first url req
@@ -39,12 +39,11 @@ def answers(soup):
     if div:
         corrected_sentences_list = []
         for sentence in div:
-
             corrected_sentences_list.append(sentence)
             # search for number in the strings
             match = number_pattern.search(sentence)
             words = word.search(sentence)
-            if match and words and letter_or_word == '+':
+            if match and words and letter_or_word == 'W':
                 print(sentence)
             elif match.group() == letter_or_word:
                 print(sentence)
