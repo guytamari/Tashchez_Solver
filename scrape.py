@@ -12,7 +12,7 @@ import pdb
 
 #               Things to fix:
 #                       1:      printing שתי מילים  Y
-#                       2:      
+#                       2:
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) '
